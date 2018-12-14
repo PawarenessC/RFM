@@ -1,0 +1,11 @@
+name: RFM
+main: pawarenessc\RFM\Main
+version: 0.1
+api: [4.0.0,3.0.0,3.5.0]
+authors : [musaichi,mcshigo,PawarenessC]
+load: POSTWORLD
+description: play tag.
+commands:
+ ts:
+  description: "逃走中"
+  usage: " /ts "
