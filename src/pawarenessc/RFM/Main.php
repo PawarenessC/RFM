@@ -314,12 +314,6 @@ if($this->runner->exists($name)) {
 	$yr = $c->getY();
 
 	$zr = $c->getZ();
-	
-	$hb = $this->config->get("HB");
-	
-	$jb = $this->config->get("JB");
-	
-	$kb = $this->config->get("KB");
 
 	$block = Block::get(0,0);
 
@@ -329,7 +323,7 @@ if($this->runner->exists($name)) {
 
     $win = $this->win;
 
-    if($b == $jb){
+    if($b == 121){
 
 				if ($this->runner->exists($n)) {
             if($this->minute > 0){
@@ -355,7 +349,7 @@ if($this->runner->exists($name)) {
 
             }
 
-    }elseif($b == $kb){
+    }elseif($b == 19){
 
         if($this->game == true){
 
@@ -371,7 +365,7 @@ if($this->runner->exists($name)) {
 
         }
 
-    }elseif($b == $hb){
+    }elseif($b == 247){
 
         if($this->minute > 50){
 
