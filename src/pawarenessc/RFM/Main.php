@@ -520,7 +520,7 @@ $ename = $entity->getName();
 		  $this->runner->save();
 
           $xyz = new Vector3($this->xyz->getAll()["牢屋"]["x"], $this->xyz->getAll()["牢屋"]["y"], $this->xyz->getAll()["牢屋"]["z"], $this->xyz->getAll()["ワールド"]);
-          $p->teleport($xyz);
+          $entity->teleport($xyz);
 
 
          $this->t = $this->t - 1;
