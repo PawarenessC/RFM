@@ -246,7 +246,7 @@ $this->cogame = false;
           "y"=>4,
           "z"=>357,
         ),
-        "ワールド"=>tousou,
+        "ワールド"=>world,
       )
     );
 
