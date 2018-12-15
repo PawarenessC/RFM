@@ -134,6 +134,8 @@ public function onEnable() {
  $this->namm = false;
  
 $this->cogame = false;
+	
+	$this->pacm = false;
 
 //$this->bigmap = false; 
 
