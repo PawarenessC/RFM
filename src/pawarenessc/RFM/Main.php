@@ -195,8 +195,8 @@ $this->cogame = false;
 
 
 
-			"説明" => "prizeでは単価の設定,pluginは経済プラグイン(EconomyAPI,MoneySystem,MixCoinSystem)の中から選べます"
-			"説明2" => "HBは復活と途中参加ができるブロックIDを、JBでは自首できるブロックIDを、KBでは観戦できます"
+			"説明" => "prizeでは単価の設定,pluginは経済プラグイン(EconomyAPI,MoneySystem,MixCoinSystem)の中から選べます",
+			"説明2" => "HBは復活と途中参加ができるブロックIDを、JBでは自首できるブロックIDを、KBでは観戦できます",
 
 
 			"prize" => "5",
@@ -242,7 +242,7 @@ $this->cogame = false;
           "y"=>4,
           "z"=>357,
         ),
-        "ワールド"=>world,
+        "ワールド"=>"world",
       )
     );
 
