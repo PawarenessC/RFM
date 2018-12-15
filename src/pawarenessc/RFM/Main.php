@@ -318,6 +318,8 @@ if($this->runner->exists($name)) {
     $T = $this->t;
 
 	$b = $event->getBlock();
+	 
+	 $c = $event->getBlock();
 
 	$xr = $c->getX();
 
