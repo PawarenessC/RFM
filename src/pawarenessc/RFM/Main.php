@@ -35,6 +35,8 @@ use pocketmine\event\player\PlayerQuitEvent;
 
 use pocketmine\event\player\PlayerInteractEvent;
 
+use pocketmine\event\player\PlayerMoveEvent
+
 
 
 use pocketmine\Player;
@@ -70,8 +72,6 @@ use pocketmine\level\Level;
 use pocketmine\level\Position;
 
 use pocketmine\level\particle\DustParticle;
-
-use pocketmine\level\particle\PortalParticle;
 
 
 use pocketmine\block\Block;
@@ -298,7 +298,7 @@ if($this->runner->exists($name)) {
 
 			$pt = new DustParticle($pos, mt_rand(), mt_rand(), mt_rand(), mt_rand());
 
-			$count = 25;//回数
+			$count = 5;//回数
 
 				for($i = 0;$i < $count; ++$i){
 
