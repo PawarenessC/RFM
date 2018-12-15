@@ -305,7 +305,7 @@ if($this->runner->exists($name)) {
 
     $T = $this->t;
 
-	$b = $event->getBlock();
+	$b = $event->getBlock()->getId();
 	 
 	 $c = $event->getBlock();
 
