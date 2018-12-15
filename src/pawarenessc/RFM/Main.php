@@ -612,11 +612,7 @@ public function onJoin(PlayerJoinEvent $event){
 
   $game = Server::getInstance()->getLevelByName("tousou");
 
-  $seiyo = Server::getInstance()->getLevelByName("seiyo");
-
-  $super = Server::getInstance()->getLevelByName("super");
-
-//$koukou = Server::getInstance()->getLevelByName("school");
+  $seiyo = Server::getInstance()
 
   $w = mt_rand(1, 3);
   
@@ -636,15 +632,9 @@ public function onJoin(PlayerJoinEvent $event){
 
   $ms2 = mt_rand(1, 3);
 
-  $pou = new Position(174, 4, 149, $super);
+  $post = new Vector3($this->xyz->getAll()["逃走者"]["x"], $this->xyz->getAll()["逃走者"]["y"], $this->xyz->getAll()["逃走者"]["z"], $this->xyz->getAll()["ワールド"]);
 
-  $poss = new Position($xs, 4, $zs, $seiyo);
-
-  $posts = new Position($xts, 4, $zts, $seiyo);
-
-  $pos = new Position(323, 4, 270, $game);
-
-  $post = new Position(246, 4, 347, $game);
+  $posh = new Vector3($this->xyz->getAll()["牢屋"]["x"], $this->xyz->getAll()["牢屋"]["y"], $this->xyz->getAll()["牢屋"]["z"], $this->xyz->getAll()["ワールド"]);
 
   $players = Server::getInstance()->getOnlinePlayers();
 
@@ -710,8 +700,11 @@ foreach ($players as $player){
 }
 
 switch($min){
- 
- case 420:
+case 450: 
+$world = $this->xyz->get("ワールド");
+$this->getServer()->loadLevel($world);
+		
+case 420:
 
   $this->getServer()->broadcastMessage("§l[§aS§eY§6S§bT§cE§4M§f]§r§bゲームが開始された！鬼はダイヤ装備をしてるよ");
 
