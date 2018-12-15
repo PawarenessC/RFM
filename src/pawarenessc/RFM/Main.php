@@ -1288,6 +1288,7 @@ if($H < 10){
       $hunter = 'hunter';
       $this->team($player, $hunter);
       $this->getServer()->broadcastMessage("§l[§aS§eY§6S§bT§cE§4M§f]§c{$name}さんが逃走中に参加しました");
+      $player->addEffect(new EffectInstance(Effect::getEffect(1), 114514, 1, false));
      }elseif($H === $T){
 
       $hunter = 'runner';
