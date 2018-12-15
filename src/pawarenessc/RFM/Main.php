@@ -317,7 +317,7 @@ if($this->runner->exists($name)) {
 
     $T = $this->t;
 
-	$c = $event->getBlock();
+	$b = $event->getBlock();
 
 	$xr = $c->getX();
 
